@@ -12,8 +12,8 @@ PORT = int(os.environ.get("PORT", 5000))
 HOST = "0.0.0.0"
 
 # Discord Links
-SUPPORT_SERVER_INVITE = "https://discord.gg/your-support-server"  # Update with actual support server
-DISCORD_SERVER_ID = "your-support-server-id"  # Update with actual support server ID
+SUPPORT_SERVER_INVITE = "https://discord.gg/vhKYD6tQnt"  # Update with actual support server
+DISCORD_SERVER_ID = "1409434527172001946"  # Update with actual support server ID
 
 # Social Media Links
 GITHUB_URL = "https://github.com/your-username/haze-bot"
