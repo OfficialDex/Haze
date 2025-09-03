@@ -25,7 +25,7 @@
                         moderation tools, entertainment features, utility commands, and much more.
                     </p>
                     <div class="hero-buttons">
-                        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                        <a href="{{ bot_invite_url or 'https://discord.com/oauth2/authorize?client_id=1410545595126644787&permissions=8&scope=bot' }}" 
                            class="btn btn-danger btn-lg me-3" target="_blank">
                             <i class="fab fa-discord me-2"></i>Add to Server
                         </a>
@@ -199,10 +199,63 @@
             <div class="col-12 text-center">
                 <h2 class="display-4 text-white fw-bold mb-4">Ready to Get Started?</h2>
                 <p class="lead text-light mb-4">Join thousands of servers already using HAZE BOT</p>
-                <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                <a href="{{ bot_invite_url or 'https://discord.com/oauth2/authorize?client_id=1410545595126644787&permissions=8&scope=bot' }}" 
                    class="btn btn-danger btn-lg px-5" target="_blank">
                     <i class="fab fa-discord me-2"></i>Add HAZE BOT Now
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Support Server Section -->
+<section class="py-5 bg-dark-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-4 text-white fw-bold">Need Help?</h2>
+                <p class="lead text-light">Join our support server for assistance and updates</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="support-card text-center">
+                    <div class="support-icon mb-4">
+                        <i class="fab fa-discord text-danger" style="font-size: 4rem;"></i>
+                    </div>
+                    <h3 class="text-white mb-3">Official Support Server</h3>
+                    <p class="text-light mb-4">
+                        Get help from our team and community members, stay updated with the latest features, 
+                        report bugs, and connect with other HAZE BOT users.
+                    </p>
+                    <div class="support-features mb-4">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="support-feature">
+                                    <i class="fas fa-headset text-danger mb-2"></i>
+                                    <p class="text-light small mb-0">24/7 Support</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="support-feature">
+                                    <i class="fas fa-bell text-danger mb-2"></i>
+                                    <p class="text-light small mb-0">Bot Updates</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="support-feature">
+                                    <i class="fas fa-users text-danger mb-2"></i>
+                                    <p class="text-light small mb-0">Community</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ support_server or 'https://discord.gg/your-support-server' }}" 
+                       class="btn btn-outline-danger btn-lg" target="_blank">
+                        <i class="fab fa-discord me-2"></i>Join Support Server
+                    </a>
+                </div>
             </div>
         </div>
     </div>

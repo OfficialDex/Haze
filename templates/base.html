@@ -54,7 +54,7 @@
                 </ul>
                 
                 <div class="d-flex">
-                    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                    <a href="{{ bot_invite_url or 'https://discord.com/oauth2/authorize?client_id=1410545595126644787&permissions=8&scope=bot' }}" 
                        class="btn btn-danger btn-add-server" target="_blank">
                         <i class="fab fa-discord me-2"></i>Add to Server
                     </a>
@@ -78,9 +78,9 @@
                 </div>
                 <div class="col-md-6 text-md-end">
                     <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="{{ support_server or '#' }}" class="text-white me-3" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/your-username/haze-bot" class="text-white me-3" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/your-twitter" class="text-white" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
