@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <div class="hero-logo mb-4">
+                        <svg width="120" height="120" viewBox="0 0 100 100" class="haze-logo-large">
+                            <defs>
+                                <linearGradient id="heroLogoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M20 20 L20 80 L40 80 L40 55 L60 55 L60 80 L80 80 L80 20 L60 20 L60 45 L40 45 L40 20 Z" fill="url(#heroLogoGradient)"/>
+                        </svg>
+                    </div>
+                    <h1 class="display-3 fw-bold text-white mb-3">HAZE BOT</h1>
+                    <p class="lead text-danger mb-4">Multipurpose Bot for Every Need</p>
+                    <p class="text-light mb-4">
+                        Experience the ultimate Discord bot designed to enhance your server with powerful 
+                        moderation tools, entertainment features, utility commands, and much more.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                           class="btn btn-danger btn-lg me-3" target="_blank">
+                            <i class="fab fa-discord me-2"></i>Add to Server
+                        </a>
+                        <a href="#features" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image text-center">
+                    <div class="bot-preview">
+                        <div class="circuit-bg"></div>
+                        <i class="fas fa-robot text-danger" style="font-size: 200px; opacity: 0.8;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5 bg-dark-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-4 text-white fw-bold">Powerful Features</h2>
+                <p class="lead text-light">Everything you need to manage and enhance your Discord server</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-white">Moderation</h4>
+                    <p class="text-light">Advanced moderation tools including auto-mod, ban/kick commands, warning system, and spam protection.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4 class="text-white">Entertainment</h4>
+                    <p class="text-light">Fun games, memes, jokes, trivia, and interactive entertainment to keep your community engaged.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h4 class="text-white">Music</h4>
+                    <p class="text-light">High-quality music streaming with playlist support, queue management, and audio controls.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4 class="text-white">Utility</h4>
+                    <p class="text-light">Useful tools like polls, reminders, server info, user management, and administrative utilities.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4 class="text-white">Analytics</h4>
+                    <p class="text-light">Server statistics, member activity tracking, and detailed analytics to understand your community.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h4 class="text-white">Customization</h4>
+                    <p class="text-light">Highly customizable settings, custom commands, role management, and server-specific configurations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-item">
+                    <div class="stat-number text-danger">1000+</div>
+                    <div class="stat-label text-light">Servers</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-item">
+                    <div class="stat-number text-danger">50K+</div>
+                    <div class="stat-label text-light">Users</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-item">
+                    <div class="stat-number text-danger">99.9%</div>
+                    <div class="stat-label text-light">Uptime</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="stat-item">
+                    <div class="stat-number text-danger">24/7</div>
+                    <div class="stat-label text-light">Support</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Commands Preview -->
+<section class="py-5 bg-dark-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-4 text-white fw-bold">Popular Commands</h2>
+                <p class="lead text-light">Get started with these essential commands</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="command-showcase">
+                    <div class="command-item">
+                        <code class="text-danger">/moderation ban</code>
+                        <span class="text-light">- Ban a user from the server</span>
+                    </div>
+                    <div class="command-item">
+                        <code class="text-danger">/music play</code>
+                        <span class="text-light">- Play music from YouTube or Spotify</span>
+                    </div>
+                    <div class="command-item">
+                        <code class="text-danger">/utility poll</code>
+                        <span class="text-light">- Create interactive polls</span>
+                    </div>
+                    <div class="command-item">
+                        <code class="text-danger">/fun joke</code>
+                        <span class="text-light">- Get a random joke</span>
+                    </div>
+                    <div class="command-item">
+                        <code class="text-danger">/info server</code>
+                        <span class="text-light">- Display server information</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="display-4 text-white fw-bold mb-4">Ready to Get Started?</h2>
+                <p class="lead text-light mb-4">Join thousands of servers already using HAZE BOT</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" 
+                   class="btn btn-danger btn-lg px-5" target="_blank">
+                    <i class="fab fa-discord me-2"></i>Add HAZE BOT Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
